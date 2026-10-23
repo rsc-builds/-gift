@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two Little Gifts 🎁</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="floating-hearts" aria-hidden="true">
+        <span>💗</span><span>💕</span><span>💖</span>
+        <span>💝</span><span>💗</span>
+    </div>
+
+    <main class="card">
+        <h1>Two Little Gifts for You 🎁</h1>
+        <p>Click each gift to discover your surprise! ✨</p>
+
+        <div class="gift-container">
+            <section class="gift-item">
+                <button
+                    type="button"
+                    class="gift-box"
+                    id="gift-one"
+                    aria-expanded="false"
+                    aria-controls="message-one"
+                    onclick="openGift(1)">
+                    🎁
+                    <span>Gift 1</span>
+                </button>
+
+                <p id="message-one" class="gift-message" hidden>
+                    You're an Amazing Friend! 💖 You are a wonderful
+                    friend, and your kindness and cheerful personality
+                    make you special. Never stop being yourself! ✨
+                </p>
+            </section>
+
+            <section class="gift-item">
+                <button
+                    type="button"
+                    class="gift-box"
+                    id="gift-two"
+                    aria-expanded="false"
+                    aria-controls="message-two"
+                    onclick="openGift(2)">
+                    🎁
+                    <span>Gift 2</span>
+                </button>
+
+                <p id="message-two" class="gift-message" hidden>
+                    In world full of cry ,
+                    I see my happiness in your eye.
+                    The place where everybody show thier rudeness,
+                    I see your cuteness and innocence.
+                    When I write this poem,
+                    I want to write about qualties of your,
+                    But when I try to write something,
+                    Then I realise there is no word to describe that
+                    How pure is your soul.                 </p>
+            </section>
+        </div>
+
+        <p id="gift-progress" aria-live="polite">
+            You have opened 0 of 2 gifts.
+        </p>
+
+        <a href="question.html" id="personal-button" class="button-link" hidden>
+            My Personal Message 💗
+        </a>
+    </main>
+</body>
+</html>

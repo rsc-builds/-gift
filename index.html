@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday 🎂</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="floating-hearts" aria-hidden="true">
+        <span>💗</span><span>💕</span><span>💖</span>
+        <span>💝</span><span>💗</span>
+    </div>
+
+    <main class="card">
+        <h1>Happy Birthday 🎂💖</h1>
+
+        <div class="cake-emoji">🎂</div>
+
+        <p>Wishing you a birthday filled with happiness, laughter, and wonderful memories! 🥳</p>
+
+        <p> I hope your special day brings you lots of reasons to smile. 💗</p>
+
+        <button type="button" onclick="openSurprise()">
+            Open Your Surprise 💌
+        </button>
+
+        <section id="birthday-letter" hidden>
+            <h2> Birthday Letter 💌</h2>
+            <p>
+                Happy Birthday! Thank you for being such a
+                wonderful friend. May your new year bring you happiness,
+                success, fun adventures, and beautiful memories! ✨
+            </p>
+        </section>
+
+        <button type="button" onclick="celebrateBirthday()">
+            Celebrate! 🎉
+        </button>
+
+        <p id="celebration-message" aria-live="polite"></p>
+
+        <a href="message.html" class="button-link">
+            Next Surprise 💌
+        </a>
+    </main>
+</body>
+</html>
